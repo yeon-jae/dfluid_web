@@ -1,0 +1,16 @@
+.header-section{
+    margin-top: 120px;
+    margin-left:80px;
+}
+.header-text{
+    white-space: pre-wrap;
+    margin-bottom:70px;
+    font-family: 'Exo 2';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+    /* or 150% */
+    letter-spacing: -0.015em;
+    color: #000000;
+}

@@ -1,0 +1,10 @@
+/* 첫번째 섹션 개별 카드  */
+
+
+.profile-card img{
+    width: 108px;
+    height: 108px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 40x;
+}
