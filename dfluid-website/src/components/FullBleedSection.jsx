@@ -55,8 +55,9 @@ function FullBleedSection() {
         </p>
       </div>
       {/* input 태그 있는곳 */}
-      <div>
-
+      <div className="bleed-input">
+        <p>Subscribe to our newsletter</p>
+        <input className="email" type="email" placeholder="Enter your email" />
       </div>
     </section>
   );

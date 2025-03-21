@@ -49,5 +49,43 @@
 }
 
 .bleed-smallText{
+    margin: 32px 0 0 2px;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: -0.21px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.6);
+}
 
+.bleed-input{
+    margin-top: 95px;
+}
+.bleed-input p{
+    margin: 0 146px 16px 150px;
+    font-family: Exo2;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    text-align: center;
+    color: #fff;
+}
+
+.email{
+    width: 500px;
+    height: 50px;
+    flex-grow: 0;
+    margin: 16px 0 0;
+    padding: 4px 10px 4px 4px;
+    border-radius: 7px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border: solid 1px #fff;
+    background-color: rgba(255, 255, 255, 0.1);
 }
