@@ -1,10 +1,66 @@
-/* 첫번째 섹션 개별 카드  */
+/* 프로필 섹션 부분  */
+.profile-card{
+    width: 493px;
+    height: 352px;
+    flex-grow: 0;
+}
 
-
+/*프로필 카드- 이미지 */
 .profile-card img{
     width: 108px;
     height: 108px;
-    border-radius: 50%; 
-    object-fit: cover; 
-    margin-bottom: 40x;
+    margin: 0 385px 40px 0;
+    object-fit: contain;
+}
+
+/*프로필 카드- 제목 */
+.profile-card h4{
+    width: 493px;
+    height: 36px;
+    flex-grow: 0;
+    margin: 40px 0 24px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: -0.36px;
+    text-align: left;
+    color: #000;
+}
+
+
+/*프로필 카드- 내용 */
+.profile-card p{
+    width: 493px;
+    height: 90px;
+    flex-grow: 0;
+    margin: 24px 0;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: -0.27px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/*프로필 카드- href*/
+.profile-card a{
+    width: 493px;
+  height: 30px;
+  flex-grow: 0;
+  margin: 24px 0 0;
+  font-family: Exo2;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: -0.27px;
+  text-align: left;
+  color: #18a0fb;
 }

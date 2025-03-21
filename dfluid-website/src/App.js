@@ -3,7 +3,7 @@ import ProfileCardSection from './components/ProfileCardSection';
 
 function App() {
   return (
-  <div>
+  <div className="Screen">
       <ProfileCardSection/>
   </div>
   );

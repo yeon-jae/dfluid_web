@@ -5,9 +5,11 @@ import "../styles/ProfileCardSection.css";
 
 
 const profiles = [
-    { id: 1, name: "Sed ut perspiciatis", img: require("../assets/profile1.jpg"), desc: "설명1" },
-    { id: 2, name: "Lorem ipsum dolor", img: require("../assets/profile2.jpg"), desc: "설명2" },
-    { id: 3, name: "Nemo enim ipsam", img: require("../assets/profile3.jpg"), desc: "설명3" }
+    { id: 1, name: "Sed ut perspiciatis", img: require("../assets/profile1.jpg"),
+       desc: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem." },
+    { id: 2, name: "Lorem ipsum dolor", img: require("../assets/profile2.jpg"), 
+      desc: "Amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis." },
+    { id: 3, name: "Nemo enim ipsam", img: require("../assets/profile3.jpg"), desc: "Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor." }
   ];
   
 
