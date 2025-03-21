@@ -1,66 +1,58 @@
-/* 프로필 섹션 부분  */
-.profile-card{
-    width: 493px;
-    height: 352px;
-    flex-grow: 0;
+/* 프로필 섹션 부분 */
+.profile-card {
+    flex: 1; 
+    max-width: 493px; 
+    min-width: 300px;
+    height: auto; 
+    text-align: left;
 }
 
-/*프로필 카드- 이미지 */
-.profile-card img{
+/* 프로필 카드 - 이미지 */
+.profile-card img {
     width: 108px;
     height: 108px;
-    margin: 0 385px 40px 0;
-    object-fit: contain;
+    margin: 0 0 40px; 
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+    text-align: left;
 }
 
-/*프로필 카드- 제목 */
-.profile-card h4{
-    width: 493px;
-    height: 36px;
-    flex-grow: 0;
+/* 프로필 카드 - 제목 */
+.profile-card h4 {
+    width: 100%; 
     margin: 40px 0 24px;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 24px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.5;
     letter-spacing: -0.36px;
     text-align: left;
     color: #000;
 }
 
-
-/*프로필 카드- 내용 */
-.profile-card p{
-    width: 493px;
-    height: 90px;
-    flex-grow: 0;
+/* 프로필 카드 - 내용 */
+.profile-card p {
+    width: 100%;
     margin: 24px 0;
-    font-family: Montserrat;
+    font-family: Montserrat, sans-serif;
     font-size: 18px;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.67;
     letter-spacing: -0.27px;
     text-align: left;
     color: rgba(0, 0, 0, 0.8);
 }
 
-/*프로필 카드- href*/
-.profile-card a{
-    width: 493px;
-  height: 30px;
-  flex-grow: 0;
-  margin: 24px 0 0;
-  font-family: Exo2;
-  font-size: 18px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.67;
-  letter-spacing: -0.27px;
-  text-align: left;
-  color: #18a0fb;
+/* 프로필 카드 - href */
+.profile-card a {
+    display: inline-block; 
+    width: auto;
+    padding: 10px 0;
+    font-family: Exo2, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.67;
+    letter-spacing: -0.27px;
+    text-align: left;
+    color: #18a0fb;
 }
