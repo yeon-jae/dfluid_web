@@ -1,0 +1,59 @@
+.year-slider-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 408px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  /* 연도 라벨 */
+  .year-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  
+  .year-labels span {
+    font-size: 14px;
+    color: gray;
+    transition: 0.3s;
+  }
+  
+  .year-labels .active {
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* 슬라이더 바 */
+  .year-slider {
+   
+    width: 100%;
+    height: 8px;
+    background: lightgray;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+  }
+  
+  /* 슬라이더 핸들 */
+  .year-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .year-slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background: black;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
