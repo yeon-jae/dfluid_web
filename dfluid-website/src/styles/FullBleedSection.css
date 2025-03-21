@@ -7,15 +7,47 @@
     background-color: rgba(197, 196, 196, 0.5);
 }
 
+.bleed-Text{
+    padding: 0 80px;
+}
+
 .bleed-Text h4{
     font-family: Montserrat;
-  font-size: 24px;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.5;
-  letter-spacing: -0.36px;
-  text-align: center;
-  color: #fff;
-  padding-top: 152px;
+    font-size: 24px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: -0.36px;
+    text-align: center;
+    color: #fff;
+    padding-top: 152px;
+}
+
+.bleed-content{
+    width: 1520px;
+    height: 89px;
+    margin: 23px 32px 80px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.67;
+    letter-spacing: -0.27px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+
+}
+
+/* 중간선 */
+.bleed-line{
+    width: 1520px;
+    height: 1px;
+    margin: 32px 0;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.bleed-smallText{
+
 }
