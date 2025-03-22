@@ -79,5 +79,5 @@
 .card-list{
     display: flex;
     margin-top: 70px;
-
+    gap: 40px;    
 }
