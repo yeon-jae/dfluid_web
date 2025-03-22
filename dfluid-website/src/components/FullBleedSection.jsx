@@ -1,9 +1,12 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import "../styles/FullBleedSection.css"; // 스타일 적용
+import emailPaper from "../assets/emailPaper.svg";
 
 function FullBleedSection() {
   const [bgImg, setBgImg] = useState(""); // 배경 이미지 상태
+  const [email, setEmail] = useState(""); //이메일
+  const [error, setError] = useState("");
 
   useEffect(() => {
     const storedImg = localStorage.getItem("bgImg");
@@ -34,6 +37,32 @@ function FullBleedSection() {
     }
   }, []);
 
+  const validateEmail = (email) => {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  };
+
+  const handleChange = (e) => {
+    const inputEmail = e.target.value;
+    setEmail(inputEmail);
+
+    if (inputEmail === "" || validateEmail(inputEmail)) {
+      setError("");
+    } else {
+      setError("Please enter a valid email!");
+    }
+  };
+
+  const handleSubmit = () => {
+    if (!validateEmail(email)) {
+      setError("이메일을 정확히 입려해주세요");
+    } else {
+      setError("");
+      alert(`Subscribed with: ${email}`);
+    }
+  };
+
+
   return (
     <section 
       className="bleed-section" 
@@ -57,7 +86,19 @@ function FullBleedSection() {
       {/* input 태그 있는곳 */}
       <div className="bleed-input">
         <p>Subscribe to our newsletter</p>
-        <input className="email" type="email" placeholder="Enter your email" />
+        <div className="email-box">
+          <input
+            className="email"
+            type="email"
+            placeholder="Enter your email"
+            value={email}
+            onChange={handleChange}
+          />
+          <button className="send-btn" onClick={handleSubmit}>
+          <img src={emailPaper} alt='picture2' height='100px' width='200px' /> 
+          </button>
+        </div>
+        {error && <p className="error-text">{error}</p>}
       </div>
     </section>
   );

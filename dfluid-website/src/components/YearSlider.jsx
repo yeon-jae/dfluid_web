@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "../styles/YearSlider.css";
 
 function YearSlider({ selectedYear, onYearChange }) {

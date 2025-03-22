@@ -77,15 +77,66 @@
     color: #fff;
 }
 
-.email{
+
+
+/*이메일 부분*/
+.email-box{
     width: 500px;
     height: 50px;
-    flex-grow: 0;
-    margin: 16px 0 0;
+    margin: 16px  0;
     padding: 4px 10px 4px 4px;
     border-radius: 7px;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border: solid 1px #fff;
     background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.email{
+    width: 446px;
+    height: 42px;
+    margin: 0 8px 0 0;
+    font-family: Exo2;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    text-align: left;
+    color: black;
+}
+
+
+.email-box input.email {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white; /* 필요 시 글씨 색상 조정 */
+    font-size: 1rem;
+    padding: 0.5rem;
+  }
+  
+.email-box img{
+    background: transparent;
+    border: none;
+}
+
+
+img{
+    width: 32px;
+    height: 32px;
+    margin: 5px 0 5px 8px; 
+  }
+.email-box .send-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.email-box ::placeholder{
+    color:white;
 }
