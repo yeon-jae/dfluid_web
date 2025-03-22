@@ -24,6 +24,8 @@
     padding-top: 152px;
 }
 
+
+/*email있는 input태그 쪽*/
 .bleed-content{
     width: 1520px;
     height: 89px;
@@ -129,7 +131,6 @@
     border: none;
 }
 
-
 img{
     width: 32px;
     height: 32px;
@@ -145,3 +146,7 @@ img{
 .email-box ::placeholder{
     color:white;
 }
+
+
+
+/**/

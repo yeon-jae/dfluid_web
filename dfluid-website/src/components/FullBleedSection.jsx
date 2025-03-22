@@ -95,7 +95,7 @@ function FullBleedSection() {
             onChange={handleChange}
           />
           <button className="send-btn" onClick={handleSubmit}>
-          <img src={emailPaper} alt='picture2' height='100px' width='200px' /> 
+          <img src={emailPaper} alt='subscribeImage'/> 
           </button>
         </div>
         {error && <p className="error-text">{error}</p>}
