@@ -7,8 +7,7 @@ import { useState } from "react";
 function FilterSection() {
   // 카테고리 & 연도 필터 상태
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [selectedYear, setSelectedYear] = useState(1300); // ✅ 기본값 설정
-
+  const [selectedYear, setSelectedYear] = useState(2000); 
   const filteredCards = CardData.filter(
     (card) =>
       (selectedCategory === "All" || card.category === selectedCategory) &&
