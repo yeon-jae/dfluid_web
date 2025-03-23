@@ -121,7 +121,7 @@
     background: transparent;
     border: none;
     outline: none;
-    color: white; /* 필요 시 글씨 색상 조정 */
+    color: white; 
     font-size: 1rem;
     padding: 0.5rem;
   }
@@ -136,6 +136,7 @@ img{
     height: 32px;
     margin: 5px 0 5px 8px; 
   }
+
 .email-box .send-btn {
   background: transparent;
   border: none;
@@ -149,4 +150,18 @@ img{
 
 
 
-/**/
+/*이메일 유효성*/
+.email-box.valid {
+    border: 2px solid #00C300;
+  }
+  
+  .email-box.error {
+    border: 2px solid #FF6633;
+  }
+  
+  .error-text {
+    margin-top: 4px;
+    color: #FF6633 !important;
+    font-size: 14px;
+    font-family: Exo2;
+  }
