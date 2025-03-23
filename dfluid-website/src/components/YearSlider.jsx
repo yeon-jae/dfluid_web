@@ -22,6 +22,7 @@ function YearSlider({ selectedYear, onYearChange }) {
 
   return (
     <div className="year-slider-container">
+      <div className="year-slider-wrapper">
       <div className="year-labels">
         <span className={selectedYear >= 1000 ? "active" : ""}>1000</span>
         <span className={selectedYear >= 1300 ? "active" : ""}>1300</span>
@@ -38,6 +39,7 @@ function YearSlider({ selectedYear, onYearChange }) {
         className="year-slider"
         ref={sliderRef}
       />
+      </div>
     </div>
   );
 }

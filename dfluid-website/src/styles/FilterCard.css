@@ -8,9 +8,7 @@
     background-color: #e7e7e7;
 }
 
-
-
-
+/*카드 연도 이름 부분*/
 .card-header{
     display: flex;
     align-items: center;     
@@ -50,6 +48,9 @@ font-family: Montserrat;
     border-radius: 5px;
 }
 
+
+
+/*카드 내용*/
 .card-content p{
     font-size: 14px;
     display: -webkit-box;
