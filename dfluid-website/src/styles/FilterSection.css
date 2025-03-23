@@ -1,13 +1,13 @@
+/*세번째 섹션: 카드 필터링 부분*/
+
 .filter-section{
     padding: 120px 80px 0px 80px;
 }
 
 .filter-section p{
-    font-family: Exo2;
+    font-family:var(--font-exo);
     font-size: 48px;
     font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.5;
     letter-spacing: -0.72px;
     text-align: left;
@@ -35,9 +35,10 @@
 }
 
 .category-filter button {
+    margin-top: 5px;
     height: 40px;
     padding: 8px 16px;
-    font-family: Exo2;
+    font-family: var(--font-exo);
     font-size: 16px;
     border: none;
     border-radius: 25px;
@@ -52,7 +53,7 @@
 .category-filter button.active {
     height: 40px;
     padding: 8px 16px;
-    font-family: Exo2;
+    font-family: var(--font-exo);
     font-size: 16px;
     text-align: center;
     color:white;

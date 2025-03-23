@@ -1,4 +1,4 @@
-/*개별 카드 부분   */
+/*세번째 섹션 - 필터링 카드 부분 */
 .card{
     width: 400px;    
     height: auto;
@@ -17,12 +17,9 @@
 
 .card-header p{
     float: left;
-    font-family: Montserrat;
+    font-family: var(--font-montserrat);
     font-size: 16px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
     letter-spacing: -0.24px;
     text-align: left;
     color: #000;
@@ -30,15 +27,13 @@
 
 
 .year{
-font-family: Montserrat;
-  font-size: 16px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: -0.24px;
-  text-align: right;
-  color: #000;
+    font-family:var(--font-montserrat);
+    font-size: 16px;
+    font-weight: normal;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    text-align: right;
+    color: #000;
 }
 
 .card img{
@@ -52,6 +47,7 @@ font-family: Montserrat;
 
 /*카드 내용*/
 .card-content p{
+    font-family:var(--font-montserrat);
     font-size: 14px;
     display: -webkit-box;
     -webkit-line-clamp: 6;    /* 최대 3줄만 보여주기 */

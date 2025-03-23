@@ -1,4 +1,4 @@
-/* 프로필 섹션 부분 */
+/* 개별 프로필 카드 부분 */
 .profile-card {
     flex: 1; 
     max-width: 493px; 
@@ -22,7 +22,7 @@
 .profile-card h4 {
     width: 100%; 
     margin: 40px 0 24px;
-    font-family: Montserrat, sans-serif;
+    font-family: var(--font-montserrat);
     font-size: 24px;
     font-weight: bold;
     line-height: 1.5;
@@ -35,7 +35,7 @@
 .profile-card p {
     width: 100%;
     margin: 24px 0;
-    font-family: Montserrat, sans-serif;
+    font-family: var(--font-montserrat);
     font-size: 18px;
     line-height: 1.67;
     letter-spacing: -0.27px;
@@ -48,7 +48,7 @@
     display: inline-block; 
     width: auto;
     padding: 10px 0;
-    font-family: Exo2, sans-serif;
+    font-family: var(--font-exo);
     font-size: 18px;
     font-weight: bold;
     line-height: 1.67;

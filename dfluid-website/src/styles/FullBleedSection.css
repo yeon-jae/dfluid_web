@@ -1,3 +1,5 @@
+/*두번째 섹션: 이미지, 구독 부분*/
+
 .bleed-section {
     width: 100%;
     height: 740px;
@@ -12,7 +14,7 @@
 }
 
 .bleed-Text h4{
-    font-family: Montserrat;
+    font-family: var(--font-montserrat);
     font-size: 24px;
     font-weight: bold;
     font-stretch: normal;
@@ -25,12 +27,12 @@
 }
 
 
-/*email있는 input태그 */
+
 .bleed-content{
     width: 1520px;
     height: 89px;
     margin: 23px 32px 80px;
-    font-family: Montserrat;
+    font-family:  var(--font-montserrat);
     font-size: 18px;
     font-weight: normal;
     font-stretch: normal;
@@ -38,31 +40,34 @@
     line-height: 1.67;
     letter-spacing: -0.27px;
     text-align: center;
-    color: rgba(255, 255, 255, 0.8);
+    color: #FFFFFF;
+    opacity: 80%;
 
 }
+
 
 /* 중간선 */
 .bleed-line{
     width: 1520px;
     height: 1px;
     margin: 32px 0;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: #FFFFFF;
+    opacity: 50%;
 }
 
 .bleed-smallText{
     margin: 32px 0 0 2px;
-    font-family: Montserrat;
+    font-family: var(--font-montserrat);
     font-size: 14px;
     font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 1.57;
     letter-spacing: -0.21px;
     text-align: center;
     color: rgba(255, 255, 255, 0.6);
 }
 
+
+/*email있는 input태그 */
 .bleed-input {
     display: flex;
     justify-content: center; 
@@ -71,14 +76,12 @@
     text-align: center;     
     margin-top: 95px;
   }
+
 .bleed-input p{
     margin: 0 146px 16px 150px;
-    font-family: Exo2;
+    font-family: var(--font-exo);
     font-size: 16px;
     font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
     letter-spacing: -0.24px;
     text-align: center;
     color: #fff;
@@ -105,37 +108,30 @@
     width: 446px;
     height: 42px;
     margin: 0 8px 0 0;
-    font-family: Exo2;
+    font-family: var(--font-exo);
     font-size: 16px;
     font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
     letter-spacing: -0.24px;
     text-align: left;
     color: black;
 }
 
-
 .email-box input.email {
-    background: transparent;
-    border: none;
-    outline: none;
-    color: white; 
-    font-size: 1rem;
-    padding: 0.5rem;
-  }
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white; 
+  font-size: 1rem;
+  padding: 0.5rem;
+}
   
 .email-box img{
     background: transparent;
     border: none;
-}
-
-img{
     width: 32px;
     height: 32px;
     margin: 5px 0 5px 8px; 
-  }
+}
 
 .email-box .send-btn {
   background: transparent;
@@ -147,7 +143,6 @@ img{
 .email-box ::placeholder{
     color:white;
 }
-
 
 
 /*이메일 유효성*/
@@ -162,6 +157,7 @@ img{
   .error-text {
     margin-top: 4px;
     color: #FF6633 !important;
-    font-size: 14px;
-    font-family: Exo2;
+    font-size: 16px;
+    font-family: var(--font-exo);
+    font-weight: 100;
   }

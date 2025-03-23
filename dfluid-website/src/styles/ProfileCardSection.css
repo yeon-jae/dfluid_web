@@ -1,13 +1,15 @@
+/*첫번째 섹션: 프로필 카드*/
 .header-section{
     width: 1680px;
     margin: 0 auto; 
     padding: 0 80px; 
 }
+
 .header-text{
     margin-top: 120px;
     margin-bottom:70px;
     white-space: pre-wrap;
-    font-family: 'Exo 2';
+    font-family:  var(--font-exo);
     font-style: normal;
     font-weight: 400;
     font-size: 48px;

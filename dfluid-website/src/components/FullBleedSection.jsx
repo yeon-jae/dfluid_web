@@ -12,8 +12,10 @@ function FullBleedSection() {
     const storedImg = localStorage.getItem("bgImg");
     const apiKey = process.env.REACT_APP_UNSPLASH_API_KEY;
 
+
+    //이미지 불러오기 + 고정된 이미지 사용
     if (storedImg) {
-      setBgImg(storedImg); // 저장된 이미지 
+      setBgImg(storedImg); 
     } else {
       const fetchImage = async () => {
         try {
@@ -25,7 +27,7 @@ function FullBleedSection() {
 
           const imgUrl = response.data?.urls?.regular;
           if (imgUrl) {
-            setBgImg(imgUrl); // 배경 이미지 상태 업데이트
+            setBgImg(imgUrl); 
             localStorage.setItem("bgImg", imgUrl); // 로컬스토리지 저장
           } 
         } catch (error) {
@@ -37,6 +39,7 @@ function FullBleedSection() {
     }
   }, []);
 
+  //구독- 이메일 유효성 검사
   const validateEmail = (email) => {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);

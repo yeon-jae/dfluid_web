@@ -1,4 +1,5 @@
 import './App.css';
+import './styles/font.css';
 import ProfileCardSection from './components/ProfileCardSection';
 import FullBleedSection from './components/FullBleedSection';
 import FilterSection from './components/FilterSection';
