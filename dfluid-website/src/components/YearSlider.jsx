@@ -1,10 +1,24 @@
 import "../styles/YearSlider.css";
+import { useEffect, useRef } from "react";
 
 function YearSlider({ selectedYear, onYearChange }) {
+  const sliderRef=useRef(null);
   const handleChange = (e) => {
     const year = parseInt(e.target.value);
     onYearChange(year);
   };
+  useEffect(() => {
+    const slider = sliderRef.current;
+    const percentage = ((selectedYear - 1000) / (2000 - 1000)) * 100;
+
+    slider.style.background = `linear-gradient(
+      to right,
+      black 0%,
+      black ${percentage}%,
+      #ccc ${percentage}%,
+      #ccc 100%
+    )`;
+  }, [selectedYear]);
 
   return (
     <div className="year-slider-container">
@@ -22,6 +36,7 @@ function YearSlider({ selectedYear, onYearChange }) {
         value={selectedYear}
         onChange={handleChange}
         className="year-slider"
+        ref={sliderRef}
       />
     </div>
   );

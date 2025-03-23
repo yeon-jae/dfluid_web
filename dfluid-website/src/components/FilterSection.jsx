@@ -44,7 +44,7 @@ function FilterSection() {
         {filteredCards.length > 0 ? (
           filteredCards.map((card) => <FilterCard key={card.id} card={card} />)
         ) : (
-          <p>No results found</p>
+          <p>no results.</p>
         )}
       </div>
     </section>
