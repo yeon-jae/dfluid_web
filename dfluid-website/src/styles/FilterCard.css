@@ -1,18 +1,21 @@
 /*세번째 섹션 - 필터링 카드 부분 */
 .card{
-    width: 400px;    
+    width: 100%;
+    max-width: 408px; 
+    flex: 1 1 300px;  
     height: auto;
     padding: 15px 20px 23px;
-    opacity: 0.9;
     border-radius: 10px;
     background-color: #e7e7e7;
+    box-sizing: border-box;
 }
 
 /*카드 연도 이름 부분*/
 .card-header{
     display: flex;
     align-items: center;     
-    justify-content: space-between
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .card-header p{
@@ -27,12 +30,9 @@
 
 
 .year{
+    white-space: nowrap;
     font-family:var(--font-montserrat);
     font-size: 16px;
-    font-weight: normal;
-    line-height: normal;
-    letter-spacing: -0.24px;
-    text-align: right;
     color: #000;
 }
 
@@ -50,9 +50,11 @@
     font-family:var(--font-montserrat);
     font-size: 14px;
     display: -webkit-box;
-    -webkit-line-clamp: 6;    /* 최대 3줄만 보여주기 */
+    -webkit-line-clamp: 6;    /* 최대 6줄만 보여주기 */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 1.5;
 }
+
+
